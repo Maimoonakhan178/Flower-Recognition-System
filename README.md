@@ -31,8 +31,7 @@ pip install numpy pandas scikit-learn keras tensorflow opencv-python tqdm pillow
 Dataset
 The dataset used for training and validation is the "Flowers Recognition" dataset. It can be found on Kaggle and should be downloaded and placed in the input directory. The dataset should have the following structure:
 
-css
-Copy code
+
 input
 └── flowers-recognition
     └── flowers
@@ -40,10 +39,11 @@ input
         ├── sunflower
         ├── tulip
         └── rose
-Code Overview
+        
+
 The main script flower_recognition.py includes the following steps:
 
-Importing Required Libraries: Import all necessary libraries for data processing, model building, and evaluation.
+**Importing Required Libraries: Import all necessary libraries for data processing, model building, and evaluation.
 Loading and Preprocessing Data: Load images from the dataset, resize them, and assign labels.
 Visualizing Random Images: Visualize some random images from the dataset with their labels.
 Label Encoding and One Hot Encoding: Encode the labels and convert them to one-hot vectors.
@@ -52,6 +52,7 @@ Compiling the Model: Compile the model with the Adam optimizer and categorical c
 Training the Model: Train the model on the training set and validate it on the validation set.
 Evaluating the Model: Evaluate the model's performance on the test set.
 Visualizing Model Performance: Plot the accuracy and loss curves for training and validation sets.
-Visualizing Predictions: Visualize some correct and misclassified predictions.
+Visualizing Predictions: Visualize some correct and misclassified predictions.**
+
 Training the Model
 To train the model, run the script flower_recognition.py. The training process includes loading the data, preprocessing, and training the CNN model. The model is trained for 21 epochs with a batch size of 256.
